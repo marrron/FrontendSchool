@@ -14,5 +14,21 @@
     <img src="이미지.jpg" />
     <!-- 스크린 리더가 '이미지'를 읽습니다 -->
     <img src="이미지.jpg" alt="이미지" />
+    <!-- 상대경로 : 현재 폴더에 이미지.jpg -->
+    <img src="./이미지.jpg" alt="이미지" />
+    <!-- 상대경로: 상위폴더 > img폴더 > 이미지.jpg -->
+    <img src="../이미지.jpg" alt="이미지" />
+    <!-- 절대경로 -->
+    <img src="http://www.paullab.co.kr/images/ceo.png" alt="이미지" />
+    <img
+      src="D:\지영\study\멋쟁이사자처럼\FrontendSchool\HTML\이미지.jpg"
+      alt="이미지"
+    />
+    <img
+      width="200px"
+      srcset="img/logo_1.png 2x, img/logo_2.png 3x"
+      src="이미지.jpg"
+      alt="test"
+    />
   </body>
 </html>
