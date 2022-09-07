@@ -15,6 +15,16 @@
       <input type="text" name="test" minlength="10" /><br />
       개인정보 동의해?
       <input type="checkbox" name="test" required /><br />
+      <input type="text" placeholder="통장잔고" name="test" required /><br />
+      <input
+        type="tel"
+        name="tlno"
+        id="tlno"
+        title="전화번호를 입력하세요."
+        placeholder="00*-000*-0000"
+        pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{3,4}"
+        maxlength="13"
+      />
       <button type="submit">회원가입</button>
     </form>
   </body>
