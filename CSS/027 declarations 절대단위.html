@@ -6,13 +6,29 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Document</title>
       <style>
+         /* 
+         절대적인 것은 아니고 주로
+         고정 단위로 주면 좋은 것: padding, margin, 모니터 크기에 따라 상관없이 보일 것들, 반응형을 고려하지 않아도 될 때, 글씨와 관련없는 것들, 계산하기 쉬워야 하는 것들
+         가변 단위로 주면 좋은 것: image, font(병원에 홈페이지 납품, 병원장님이 cancel -> 폰트가 너무 작아서 -> 만약에 이것을 가변으로 줬다면 body 폰트 하나만 수정했으면 됨)
+         */
          .one {
             font-size: 32px;
+         }
+         .two {
+            font-size: 16px;
+         }
+         .three {
+            font-size: 2rem;
          }
       </style>
    </head>
    <body>
+      <h1 class="one">hello world</h1>
       <h1>hello world</h1>
+      <p class="two">hello world</p>
+      <p>hello world</p>
+      hello world
+      <h1 class="three">hello world</h1>
       <h1>hello world</h1>
    </body>
 </html>
