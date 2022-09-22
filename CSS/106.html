@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+      <style>
+         /* .ir_pm {
+            display: block;
+            overflow: hidden;
+            font-size: 1px;
+            line-height: 0;
+            text-indent: -9999px;
+         } */
+         .ir_pm {
+            display: block;
+            overflow: hidden;
+            font-size: 1px;
+            line-height: 0;
+            color: transparent;
+            /* transparent 키워드는 IE9부터 사용 가능하기 때문에 PC에서는 빠져있습니다.
+               https://developer.mozilla.org/en-US/docs/Web/CSS/color_value#transparent */
+         }
+         button {
+            width: 100px;
+            height: 100px;
+            background: url(https://upload.wikimedia.org/wikipedia/commons/4/4a/100x100_logo.png);
+         }
+      </style>
+   </head>
+   <body>
+      <button class="ir_pm">오렌지버튼입니다.</button>
+   </body>
+</html>
