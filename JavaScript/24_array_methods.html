@@ -101,6 +101,52 @@
          //     return a - b;
          // });
 
+         let arrNum_test = [13, 9, 10, 2];
+         [...arrNum_test].sort();
+
+         // let a = [1, 2, 3 ,4]
+         // let b = a
+         // b[0] = 1000
+         // a
+
+         let a = [1, 2, 3, 4];
+         let b = [...a];
+         b[0] = 1000;
+         a;
+
+         // 애러없이 작동되는 코드
+         function sort(key) {
+            if (click) {
+               click = false;
+               var sortedData = jsonData.sort((a, b) =>
+                  a[key] < b[key] ? -1 : a[key] > b[key] ? 1 : 0
+               );
+            } else {
+               click = true;
+               var sortedData = jsonData.sort((a, b) =>
+                  a[key] > b[key] ? -1 : a[key] < b[key] ? 1 : 0
+               );
+            }
+
+            let tableBodyData = [];
+
+            for (const iterator of sortedData) {
+               tableBodyData.push(`          
+                    <tr>
+                        <td>${iterator["시·도별(1)"]}</td>
+                        <td>${iterator["총인구 (명)"]}</td>
+                        <td>${iterator["1차 접종 누계"]}</td>
+                        <td>${iterator["2차 접종 누계"]}</td>
+                        <td>${iterator["1차 접종 퍼센트"]}</td>
+                        <td>${iterator["2차 접종 퍼센트"]}</td>
+                    </tr>
+                `);
+            }
+
+            document.querySelector("#dataTable > tbody").innerHTML =
+               tableBodyData.join("");
+         }
+
          // 9 - 13 ==> 음수  ==> [9, 13, 10, 2]
          // 10 - 9 ==> 양수 ==> [9, 13, 10, 2]
          // 10 - 13 ==> 음수 ==> [9, 10, 13, 2]
