@@ -5,28 +5,28 @@
  */
 
 var outer = function () {
-   var a = 1;
-   var inner = function () {
-      var b = 5;
-      var c = 6;
-      a = a + b + c;
-      console.log(a);
-   };
-   inner();
+    var a = 1;
+    var inner = function () {
+        var b = 5;
+        var c = 6;
+        a = a + b + c;
+        console.log(a);
+    };
+    inner();
 };
 outer();
 
 //------------------------------------//
 
 var outer = function () {
-   var a = 1;
-   var inner = function () {
-      var b = 5;
-      var c = 6;
-      a = a + b + c;
-      console.log(a);
-   };
-   return inner;
+    var a = 1;
+    var inner = function () {
+        var b = 5;
+        var c = 6;
+        a = a + b + c;
+        console.log(a);
+    };
+    return inner;
 };
 
 var newInner = outer();
@@ -35,21 +35,21 @@ newInner();
 //------------------------------------//
 
 var person = (function () {
-   var age = 15;
+    var age = 15;
 
-   return {
-      name: "wade",
+    return {
+        name: "wade",
 
-      getAge: function () {
-         console.log(age);
-         return age;
-      },
+        getAge: function () {
+            console.log(age);
+            return age;
+        },
 
-      setAge: function (val) {
-         age = val;
-         console.log(age);
-      },
-   };
+        setAge: function (val) {
+            age = val;
+            console.log(age);
+        }
+    }
 })();
 
 person.getAge();

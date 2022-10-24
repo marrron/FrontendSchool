@@ -11,11 +11,12 @@ Type(x)가 NaN이면 false를 반환합니다. y가 NaN이면 false를 반환합
 
 console.log(0 / 0); // NaN
 console.log(10 / 0); // Infinity
-console.log("hello world" - 100); // NaN
-console.log("hello world" / 100); // NaN
-console.log("hello world" * 100); // NaN
-console.log("2" * 10); // 20
+console.log('hello world' - 100) // NaN
+console.log('hello world' / 100) // NaN
+console.log('hello world' * 100) // NaN
+console.log('2' * 10) // 20
 console.log("---");
+
 
 // 암기
 console.log(NaN == NaN); // false

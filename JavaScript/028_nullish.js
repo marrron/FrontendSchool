@@ -1,8 +1,8 @@
-// https://ko.javascript.info/nullish-coalescing-operator
+// https://ko.javascript.info/nullish-coalescing-operator 
 let firstName = null;
 let lastName = null;
-let nickName = "바이올렛";
-// null이나 undefined가 아닌 첫번째 피연산자
+let nickName = "바이올렛"; 
+// null이나 undefined가 아닌 첫번째 피연산자 
 console.log(firstName ?? lastName ?? nickName ?? "익명의 사용자");
 
 // let a = 10;
@@ -21,8 +21,8 @@ console.log(firstName ?? lastName ?? nickName ?? "익명의 사용자");
 
 // 카카오톡
 let 실명;
-let 별명 = "licat";
-let 기본값 = "프로도";
+let 별명 = 'licat';
+let 기본값 = '프로도';
 
 let 채팅창아이디 = 실명 ?? 별명 ?? 기본값;
 
