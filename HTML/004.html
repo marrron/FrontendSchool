@@ -34,20 +34,22 @@
     #one
     .one
     h1#one.two.three.four
+    h$*6
     h${hello}*6
     div.container-$.row-$*6
     lorem
-    한글입숨
     lorem5
     lorem*5
+    한글입숨
     img
     img:z
     img
-    p[a="value1" b="value2"c=1 d=value3]
+    p[a="value1" b="value2" c=1 d=value3]
     a[href="https://www.naver.com"]
     table>(tr>td{hello}*10)*5
-    table>(thead>tr>th{제목}*5)+(tbody>tr*10>td{내용})*5+(tfoot>tr>td*5)
-    (ctrl + space)=미리보기
+    table>tr*5>td*10
+    table>(thead>tr>th{제목}*5)+(tbody>tr*10>td{내용}*5)+tfoot>tr>td*5
+    (Ctrl + Space)
 
     <!--
             Ctrl + \ : 토글 보이기
@@ -62,7 +64,7 @@
             Shift + del : 라인 지우기
             Ctrl + 클릭 : 여러줄 입력 
         -->
-        <!-- 참고자료 : https://docs.emmet.io/cheat-sheet/ -->
+    <!-- 참고자료 : https://docs.emmet.io/cheat-sheet/ -->
 </body>
 
 </html>

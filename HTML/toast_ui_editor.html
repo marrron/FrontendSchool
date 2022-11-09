@@ -11,7 +11,16 @@
     </head>
     <body>
         <!-- 해당 예제는 bootstrap 시간에 했었습니다. -->
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
         <div id="editor"></div>
+        <p>hello</p>
+        <p>hello</p>
+        <p>hello</p>
+        <button onclick="test()">눌러</button>
+
         <script>
             const Editor = toastui.Editor;
 
@@ -24,6 +33,11 @@
 
             // editor.getHTML()
             // editor.getMarkdown()
+
+            function test() {
+                console.log("test");
+                console.log(editor.getMarkdown());
+            }
         </script>
     </body>
 </html>
