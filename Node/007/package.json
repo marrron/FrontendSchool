@@ -1,9 +1,8 @@
 {
-  "name": "005",
+  "name": "007",
   "version": "1.0.0",
   "description": "",
-  "main": "002.js",
-  "type":"module",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
